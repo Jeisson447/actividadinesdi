@@ -1,0 +1,116 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+venv/
+env.bak/
+venv.bak/
+.pytest_cache/
+.pytype/
+.mypy_cache/
+coverage/
+htmlcov/
+*.cover
+*.py,cover
+.hypothesis/
+.cache/
+.pdm.toml
+.pdm-python
+
+# ------------------------
+# Node.js
+# ------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+dist/
+build/
+.env
+.next/
+out/
+coverage/
+.vscode/
+.eslintcache
+
+# ------------------------
+# .NET
+# ------------------------
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+*.csproj.user
+.vscode/
+*.ncb
+*.sdf
+*.cache
+*.dbmdl
+*.pdb
+*.mdb
+
+# ------------------------
+# Logs & reports
+# ------------------------
+*.log
+logs/
+*.tlog
+*.pid
+*.seed
+*.pid.lock
+*.swp
+
+# ------------------------
+# OS & Editor Files
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.old
+
+# ------------------------
+# GitHub Actions & CI/CD
+# ------------------------
+.github/workflows/*.log
+.github/workflows/*.tmp
+secrets.env
+*.secret
+*.key
+*.crt
+
+# ------------------------
+# General IDE settings
+# ------------------------
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# ------------------------
+# Others
+# ------------------------
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.lock
+*.bak
+*.tmp
+*.swp
+*.orig
+*.rej
+*.log

@@ -1,14 +1,24 @@
 {
-  "name": "frontend-vercel",
+  "name": "devops-guia",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "echo \"No lint configurado\" && exit 0",
-    "build": "echo \"Build step ejecutado\"",
-    "test:functional": "echo \"Functional tests executed\""
+  "description": "Este repositorio contiene la estructura de referencia para implementar prácticas DevOps en pequeñas empresas que operan en entornos cloud, específicamente diseñado para equipos con recursos limitados. Forma parte del Trabajo Final de Máster \"Implementación Incremental de DevOps: Estrategias Adaptadas para Equipos pequeños en Entornos de Nube\".",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
   },
-  "dependencies": {
-    "express": "^4.18.2",
-    "serverless-http": "^3.2.0"
-  }
+  "scripts": {
+    "test": "echo \"Sin pruebas todavía\" && exit 0",
+    "lint": "echo \"Lint simulado\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeisson447/devops-guia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeisson447/devops-guia/issues"
+  },
+  "homepage": "https://github.com/Jeisson447/devops-guia#readme"
 }
