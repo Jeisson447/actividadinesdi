@@ -1,0 +1,49 @@
+image: node:18
+
+pipelines:
+  default:
+    - step:
+        name: "🔧 Instalar dependencias"
+        caches:
+          - node
+        script:
+          - npm install
+        artifacts:
+          - node_modules/**
+
+    - step:
+        name: "🧪 Ejecutar pruebas unitarias"
+        script:
+          - npm test
+
+    - step:
+        name: "✅ Análisis de calidad de código (ESLint)"
+        script:
+          - npm run lint || echo "Errores de lint encontrados, revisar."
+
+    - step:
+        name: "🚀 Compilar aplicación (build)"
+        script:
+          - npm run build
+        artifacts:
+          - dist/**
+
+    - step:
+        name: "🧪 Verificación funcional"
+        script:
+          - npm run test:functional
+
+    - step:
+        name: "🌐 Despliegue en entorno de prueba (staging)"
+        deployment: staging
+        script:
+          - echo "Desplegando en Vercel (Staging)..."
+          - curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_5PfikStOrQZxYtgUs7C0JhCnI3AQ/AXcvFwp3cj"
+
+    - step:
+        name: "🚀 Despliegue en entorno de producción"
+        deployment: production
+        trigger: manual
+        script:
+          - echo "Desplegando en Vercel (Producción)..."
+          - curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_5PfikStOrQZxYtgUs7C0JhCnI3AQ/Bv8AAcSxYS"
